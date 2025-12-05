@@ -3,28 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahdi Bagheri | Computer Vision Engineer</title>
+    <title>Mahdi Bagheri | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Importing a tech-focused font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav>
         <div class="logo">MB.</div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills">Skills & Education</a></li>
             <li><a href="Academic_CV_MahdiBagheri.pdf" target="_blank" class="btn-resume">Resume</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <header id="hero">
         <div class="container">
             <h3>Hi, my name is</h3>
@@ -39,113 +33,64 @@
         </div>
     </header>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>01.</span> Experience</h2>
-            
-            <div class="timeline">
-                
-                <!-- Job 1 -->
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>Computer Vision Research Engineer</h3>
-                        <span class="company">Vali Smart Agricultural Systems</span>
-                        <span class="date">Jan 2024 - Present</span>
-                    </div>
-                    <ul class="job-details">
-                        <li>Proposed a lightweight YOLO modification reducing inference latency by 20% on edge devices while maintaining mAP.</li>
-                        <li>Developed a semi-supervised knowledge-distillation pipeline using EfficientNet, YOLO, and LoRA-finetuned DINOv2.</li>
-                        <li>Achieved 90% data reduction in labeling using few-shot learning with CLIP.</li>
-                        <li>Incorporated TensorRT to enhance inference speed up to 10x faster for real-time sorting.</li>
-                    </ul>
-                </div>
-
-                <!-- Job 2 -->
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>Computer Vision Research Engineer</h3>
-                        <span class="company">Arassis</span>
-                        <span class="date">Feb 2022 - Present</span>
-                    </div>
-                    <ul class="job-details">
-                        <li>Developing AR neurosurgery navigation using HoloLens 2.</li>
-                        <li>Proposed a robust point cloud registration pipeline modifying ICP and investigating Deep Learning approaches (RPM-Net, GeoTransformer).</li>
-                        <li>Developed calibration methods for inside-out (HoloLens) and outside-in (HTC Vive/NDI) tracking systems with sub-millimeter accuracy.</li>
-                    </ul>
-                </div>
-
-                <!-- Job 3 -->
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>AI & Mechatronic Intern</h3>
-                        <span class="company">Agricultural Robotics Lab (Sharif Agrobot)</span>
-                        <span class="date">Aug 2021 - Dec 2021</span>
-                    </div>
-                    <ul class="job-details">
-                        <li>Implemented YOLOv5-based software on Raspberry Pi hardware for agricultural robotics.</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section (WITH DEMO SLOTS) -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title"><span>02.</span> Selected Projects</h2>
+            <h2 class="section-title"><span>01.</span> Selected Projects</h2>
             <div class="projects-grid">
 
-                <!-- Project 1 -->
-                <div class="project-card">
+                <!-- 1. Sorting Machine -->
+                <a href="project-sorting.html" class="project-card">
                     <div class="project-image">
-                        <!-- REPLACE THIS WITH YOUR GIF/IMAGE LATER -->
-                        <div class="placeholder-demo">
-                            <i class="fas fa-robot"></i>
-                            <p>Add Sorting Machine GIF Here</p>
-                        </div>
+                        <!-- Ensure you have 'sorting-cover.jpg' in assets folder -->
+                        <img src="assets/sorting-cover.jpg" alt="Agricultural Sorting Machine">
                     </div>
                     <div class="project-content">
                         <h3>Real-time Agricultural Sorting</h3>
-                        <p>Developed a high-throughput MVP integrating Computer Vision with mechanical actuation. Achieved 95% accuracy at 250 kg/h capacity using multi-view camera inspection.</p>
+                        <p>High-throughput MVP integrating CV with mechanical actuation. Click to see the semi-supervised distillation results and sorting videos.</p>
                         <div class="tech-stack">
                             <span>YOLO</span>
                             <span>TensorRT</span>
                             <span>Edge AI</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 2 -->
-                <div class="project-card">
+                <!-- 2. AR Neurosurgery -->
+                <a href="project-ar.html" class="project-card">
                     <div class="project-image">
-                         <!-- REPLACE THIS WITH YOUR GIF/IMAGE LATER -->
-                         <div class="placeholder-demo">
-                            <i class="fas fa-vr-cardboard"></i>
-                            <p>Add HoloLens AR Demo GIF Here</p>
-                        </div>
+                        <div class="placeholder-demo"><i class="fas fa-vr-cardboard"></i></div>
                     </div>
                     <div class="project-content">
                         <h3>AR Neurosurgery Navigation</h3>
-                        <p>A solution enabling surgeons to use HoloLens 2 to view holograms augmented on real anatomy. Includes automatic point cloud registration and custom tracking calibration.</p>
+                        <p>HoloLens 2 solution for surgical navigation. Click to watch demo videos of point cloud registration and tracking.</p>
                         <div class="tech-stack">
                             <span>HoloLens 2</span>
                             <span>Unity3D</span>
-                            <span>C++</span>
                             <span>Open3D</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" title="View Paper"><i class="fas fa-file-alt"></i> arXiv</a>
+                    </div>
+                </a>
+
+                <!-- 3. Cattle Tracking -->
+                <a href="project-cattle.html" class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-demo"><i class="fas fa-video"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cattle Multi-Object Tracking</h3>
+                        <p>Deep learning-based counting system. Click to view the tracking demonstration video.</p>
+                        <div class="tech-stack">
+                            <span>Deep Learning</span>
+                            <span>OpenCV</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 3 -->
-                <div class="project-card">
+                 <!-- 4. LLM Crawler -->
+                 <div class="project-card">
                     <div class="project-content-only">
                         <h3>LLM-powered Web Crawler</h3>
-                        <p>Agentic framework and recommendation system for Academic Position Search using LangChain (2025). Automates the hunt for PhD/Research positions.</p>
+                        <p>Agentic framework for Academic Position Search using LangChain (2025). Automates the hunt for PhD/Research positions.</p>
                         <div class="tech-stack">
                             <span>LangChain</span>
                             <span>Python</span>
@@ -154,56 +99,39 @@
                     </div>
                 </div>
 
-                 <!-- Project 4 -->
-                 <div class="project-card">
-                    <div class="project-content-only">
-                        <h3>Cattle Multi-Object Tracking</h3>
-                        <p>Deep learning-based multi-object tracking system to count cattle entering/exiting husbandry with high accuracy.</p>
-                        <div class="tech-stack">
-                            <span>Deep Learning</span>
-                            <span>OpenCV</span>
-                            <span>Tracking</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Skills & Education -->
     <section id="skills" class="section">
         <div class="container two-column">
-            
             <div class="col">
-                <h2 class="section-title"><span>03.</span> Education</h2>
+                <h2 class="section-title"><span>02.</span> Education</h2>
                 <div class="edu-card">
-                    <h3>Sharif University of Technology</h3>
-                    <p class="degree">B.Sc. Mechanical Engineering (Major) <br> Computer Science (Minor)</p>
+                    <div class="uni-header">
+                        <!-- Ensure you have 'sharif-logo.png' in assets folder -->
+                        <img src="assets/sharif-logo.png" alt="Sharif University Logo" class="uni-logo">
+                        <div>
+                            <h3>Sharif University of Technology</h3>
+                            <p class="degree">B.Sc. Mechanical Engineering</p>
+                        </div>
+                    </div>
                     <p class="date">Sep 2018 – Sep 2023</p>
                     <p><b>GPA:</b> 16.92/20 (Last two years: 17.16)</p>
-                    <p><b>Thesis:</b> Vision-based Artificial Sorters (Grade: 20/20)</p>
                 </div>
                 <div class="edu-card">
-                    <h3>Honors</h3>
-                    <ul class="honors-list">
-                        <li>GRE: 321 (Q: 170/170)</li>
-                        <li>IELTS: 8.0</li>
-                        <li>Nat. Physics Olympiad Bronze Medalist</li>
-                        <li>Top 0.3% Iranian Univ. Entrance Exam</li>
-                    </ul>
+                    <h3>Language Skills</h3>
+                    <p><strong>IELTS Academic: 8.0</strong></p>
+                    <div class="ielts-grid">
+                        <span>L: 8.5</span> <span>R: 8.5</span>
+                        <span>W: 7.0</span> <span>S: 7.0</span>
+                    </div>
                 </div>
             </div>
 
             <div class="col">
-                <h2 class="section-title"><span>04.</span> Technical Skills</h2>
+                <h2 class="section-title"><span>03.</span> Technical Skills</h2>
                 <div class="skills-wrapper">
-                    <div class="skill-category">
-                        <h4>Languages</h4>
-                        <div class="tags">
-                            <span>Python</span><span>C++</span><span>C#</span><span>MATLAB</span><span>Java</span>
-                        </div>
-                    </div>
                     <div class="skill-category">
                         <h4>Deep Learning / CV</h4>
                         <div class="tags">
@@ -211,20 +139,13 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Tools & Platforms</h4>
+                        <h4>Embedded & Tools</h4>
                         <div class="tags">
-                            <span>Docker</span><span>Kubernetes</span><span>Git</span><span>Unity3D</span><span>ROS</span><span>Solidworks</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Embedded</h4>
-                        <div class="tags">
-                            <span>HoloLens 2</span><span>Raspberry Pi</span><span>Arduino</span><span>NDI Polaris</span>
+                            <span>HoloLens 2</span><span>Raspberry Pi</span><span>Docker</span><span>ROS</span><span>Git</span>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
