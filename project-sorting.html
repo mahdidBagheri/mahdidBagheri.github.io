@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Machine | Mahdi Bagheri</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -15,29 +15,33 @@
         <header class="project-detail-header">
             <h1>Real-Time Agricultural Sorting</h1>
             <div class="tech-stack" style="font-size: 1rem;">
-                <span>YOLO</span> <span>TensorRT</span> <span>Knowledge Distillation</span> <span>Edge AI</span>
+                <span>YOLO</span> <span>TensorRT</span> <span>Edge AI</span>
             </div>
         </header>
 
         <section>
-            <p>This project involved developing a high-throughput Minimum Viable Product (MVP) integrating Computer Vision with mechanical actuation. The system achieved 95% accuracy at a capacity of 250 kg/h.</p>
+            <p>Developed a high-throughput MVP for an agricultural falling sorting machine. The system integrates Computer Vision algorithms with mechanical actuation to achieve 95% sorting accuracy at a capacity of 250 kg/h.</p>
             
             <div class="media-container">
-                <!-- Ensure you have 'sorting-video.mp4' in assets folder -->
+                <!-- VIDEO: FALLING SORTERS -->
                 <video controls>
                     <source src="assets/sorting-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    Your browser does not support video.
                 </video>
-                <div class="media-caption">MVP demonstration: Falling Sorters in action</div>
+                <div class="media-caption">MVP Demonstration: Falling Sorters in action</div>
             </div>
 
-            <h3>Optimization Pipeline</h3>
-            <p>To achieve real-time performance on edge devices, I proposed a semi-supervised knowledge distillation pipeline. This involved training a large teacher model (EfficientNet/DINOv2) and distilling knowledge into a lightweight student model (YOLO).</p>
+            <h3>Key Contributions</h3>
+            <ul style="color:var(--text-secondary); margin-left:20px; margin-bottom:20px;">
+                <li>Proposed a novel lightweight YOLO modification, reducing inference latency by 20%.</li>
+                <li>Incorporated TensorRT to enhance inference speed up to 10x.</li>
+                <li>Developed a semi-supervised knowledge-distillation pipeline (EfficientNet/DINOv2 Teacher -> YOLO Student).</li>
+            </ul>
 
             <div class="media-container">
-                <!-- Ensure you have 'distillation-results.jpg' in assets folder -->
-                <img src="assets/distillation-results.jpg" alt="Knowledge Distillation Results Chart">
-                <div class="media-caption">Performance comparison: Student vs Teacher model accuracy and latency</div>
+                <!-- IMAGE: DISTILLATION RESULTS -->
+                <img src="assets/distillation-results.jpg" alt="Knowledge Distillation Results">
+                <div class="media-caption">Semi-supervised knowledge distillation results</div>
             </div>
         </section>
     </div>
