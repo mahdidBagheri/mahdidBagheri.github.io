@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR Neurosurgery | Mahdi Bagheri</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -15,20 +15,27 @@
         <header class="project-detail-header">
             <h1>AR Neurosurgery Navigation</h1>
             <div class="tech-stack" style="font-size: 1rem;">
-                <span>HoloLens 2</span> <span>Unity3D</span> <span>Point Cloud Registration</span>
+                <span>HoloLens 2</span> <span>Unity3D</span> <span>Deep Learning</span>
             </div>
         </header>
 
         <section>
-            <p>A navigation solution enabling surgeons to use HoloLens 2 to view holograms augmented on real anatomy. The core challenge was achieving sub-millimeter accuracy in registration.</p>
+            <p>A novel solution enabling surgeons to use HoloLens 2 to view various modalities augmented on real anatomy as holograms. Investigated Deep Learning approaches (RPM-Net, GeoTransformer) for point cloud registration.</p>
             
             <div class="media-container">
-                <!-- Ensure you have 'ar-demo.mp4' in assets folder -->
+                <!-- VIDEO: AR DEMO -->
                 <video controls>
                     <source src="assets/ar-demo.mp4" type="video/mp4">
                 </video>
                 <div class="media-caption">Live demonstration of Point Cloud Registration</div>
             </div>
+
+            <h3>Key Contributions</h3>
+            <ul style="color:var(--text-secondary); margin-left:20px;">
+                <li>Proposed automatic point cloud registration using robust ICP modification.</li>
+                <li>Developed calibration methods for inside-out (HoloLens) and outside-in (HTC Vive) tracking.</li>
+                <li>Designed assessment methods for measuring registration/tracking errors.</li>
+            </ul>
         </section>
     </div>
 </body>
