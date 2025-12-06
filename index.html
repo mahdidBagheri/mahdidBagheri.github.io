@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahdi Bagheri | Portfolio</title>
+    <title>Mahdi Bagheri | Computer Vision Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -20,14 +20,14 @@
         </ul>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION WITH IMAGE -->
     <header id="hero">
-        <div class="container hero-wrapper">
+        <div class="container hero-content-wrapper">
             
             <div class="hero-text">
                 <h3>Hi, my name is</h3>
                 <h1>Mahdi Bagheri.</h1>
-                <h2>Research Engineer.</h2>
+                <h2>I build intelligent vision systems.</h2>
                 <p>
                     I am a Computer Vision Researcher and Deep Learning Research Engineer with a strong foundation in mathematics and engineering. My passion lies in pushing the boundaries of what machines can “see” and understand, specifically in the realms of real-time deep learning, 3D reconstruction, and Augmented Reality (AR) applications.
                 </p>
@@ -39,14 +39,13 @@
             </div>
 
             <div class="hero-image-container">
-                <!-- UPLOAD YOUR PHOTO AS assets/profile.jpg -->
+                <!-- IMPORTANT: Upload 'profile.jpg' to your assets folder -->
                 <img src="assets/profile.jpg" alt="Mahdi Bagheri" class="profile-img">
             </div>
 
         </div>
     </header>
 
-    <!-- PROJECTS SECTION -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title"><span>01.</span> Selected Projects</h2>
@@ -59,42 +58,37 @@
                     </div>
                     <div class="project-content">
                         <h3>Real-time Agricultural Sorting</h3>
-                        <p>High-throughput MVP integrating CV with mechanical actuation. Click to see the semi-supervised distillation results and sorting videos.</p>
+                        <p>High-throughput MVP integrating CV with mechanical actuation (95% accuracy). Click to see distillation results and video.</p>
                         <div class="tech-stack">
-                            <span>YOLO</span>
-                            <span>TensorRT</span>
-                            <span>Edge AI</span>
+                            <span>YOLO</span> <span>TensorRT</span> <span>Knowledge Distillation</span>
                         </div>
                     </div>
                 </a>
 
-                <!-- 2. AR Neurosurgery -->
+                <!-- 2. AR Neurosurgery (UPDATED WITH IMAGE) -->
                 <a href="project-ar.html" class="project-card">
                     <div class="project-image">
-                        <div class="placeholder-demo"><i class="fas fa-vr-cardboard"></i></div>
+                         <img src="assets/ar-cover.jpg" alt="AR Neurosurgery Navigation">
                     </div>
                     <div class="project-content">
                         <h3>AR Neurosurgery Navigation</h3>
-                        <p>HoloLens 2 solution for surgical navigation. Click to watch demo videos of point cloud registration and tracking.</p>
+                        <p>HoloLens 2 solution for surgical navigation with automatic point cloud registration. Click for demo.</p>
                         <div class="tech-stack">
-                            <span>HoloLens 2</span>
-                            <span>Unity3D</span>
-                            <span>Open3D</span>
+                            <span>HoloLens 2</span> <span>Unity3D</span> <span>Point Cloud Registration</span>
                         </div>
                     </div>
                 </a>
 
-                <!-- 3. Cattle Tracking -->
+                <!-- 3. Cattle Tracking (UPDATED WITH IMAGE) -->
                 <a href="project-cattle.html" class="project-card">
                     <div class="project-image">
-                        <div class="placeholder-demo"><i class="fas fa-video"></i></div>
+                        <img src="assets/cattle-cover.jpg" alt="Cattle Tracking">
                     </div>
                     <div class="project-content">
                         <h3>Cattle Multi-Object Tracking</h3>
-                        <p>Deep learning-based counting system. Click to view the tracking demonstration video.</p>
+                        <p>Deep learning-based counting system for animal husbandry. Click for video demo.</p>
                         <div class="tech-stack">
-                            <span>Deep Learning</span>
-                            <span>OpenCV</span>
+                            <span>Deep Learning</span> <span>OpenCV</span> <span>MOT</span>
                         </div>
                     </div>
                 </a>
@@ -103,11 +97,20 @@
                  <div class="project-card">
                     <div class="project-content-only">
                         <h3>LLM-powered Web Crawler</h3>
-                        <p>Agentic framework for Academic Position Search using LangChain (2025). Automates the hunt for PhD/Research positions.</p>
+                        <p>Agentic framework and recommendation system for Academic Position Search using LangChain (2025).</p>
                         <div class="tech-stack">
-                            <span>LangChain</span>
-                            <span>Python</span>
-                            <span>LLMs</span>
+                            <span>LangChain</span> <span>Python</span> <span>LLMs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Solar Panel -->
+                <div class="project-card">
+                    <div class="project-content-only">
+                        <h3>Solar Panel Detection</h3>
+                        <p>Analysis of Singapore using satellite imagery (2024).</p>
+                        <div class="tech-stack">
+                            <span>Satellite Imagery</span> <span>CV</span>
                         </div>
                     </div>
                 </div>
@@ -116,118 +119,91 @@
         </div>
     </section>
 
-    <!-- EDUCATION SECTION -->
     <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>02.</span> Education & Honors</h2>
+        <div class="container two-column">
             
-            <div class="edu-card">
-                <div class="uni-header">
-                    <img src="assets/sharif-logo.png" alt="Sharif University Logo" class="uni-logo">
-                    <div>
-                        <h3>Sharif University of Technology</h3>
-                        <p class="degree" style="color:var(--accent); font-family:monospace;">B.Sc. Mechanical Engineering (Major) & Computer Science (Minor)</p>
+            <!-- Education Column -->
+            <div class="col">
+                <h2 class="section-title"><span>02.</span> Education</h2>
+                <div class="edu-card">
+                    <div class="uni-header">
+                        <img src="assets/sharif-logo.png" alt="Sharif University Logo" class="uni-logo">
+                        <div class="uni-text">
+                            <h3>Sharif University of Technology</h3>
+                            <p class="degree">B.Sc. Mechanical Engineering (Major) <br> Computer Science (Minor)</p>
+                        </div>
+                    </div>
+                    <div class="edu-details">
+                        <p class="date">Sep 2018 – Sep 2023</p>
+                        <p><b>GPA:</b> 16.92/20 (Last two years: 17.16)</p>
+                        <p><b>Thesis:</b> Vision-based Artificial Sorters (Grade: 20/20)</p>
                     </div>
                 </div>
-                <p class="date" style="color:var(--text-secondary);">Sep 2018 – Sep 2023</p>
-                <p><b>GPA:</b> 16.92/20 (Last two years: 17.16)</p>
-                <p style="margin-top:10px;"><b>B.Sc. Thesis:</b> Vision-based Artificial Optical Sorters (Grade: 20/20 – Full Mark)</p>
-                
-                <hr style="border:0; border-top:1px solid #233554; margin: 20px 0;">
-                
-                <div class="test-score-grid">
-                    <div class="score-box">
-                        <span class="score-title">IELTS Academic: 8.0</span>
-                        <span class="score-breakdown">L: 8.5 / R: 8.5 / W: 7.0 / S: 7.0</span>
+
+                <div class="edu-card">
+                    <h3>Honors & Tests</h3>
+                    
+                    <p style="margin-top:15px; color:#e6f1ff;"><strong>IELTS Academic (2025): 8.0</strong></p>
+                    <div class="score-grid">
+                        <span>L: 8.5</span> <span>R: 8.5</span>
+                        <span>W: 7.0</span> <span>S: 7.0</span>
                     </div>
-                    <div class="score-box">
-                        <span class="score-title">GRE: 321</span>
-                        <span class="score-breakdown">Quant: 170 / Verbal: 151</span>
+
+                    <p style="margin-top:15px; color:#e6f1ff;"><strong>GRE General (2025): 321</strong></p>
+                    <div class="score-grid">
+                        <span>Quant: 170/170</span> <span>Verbal: 151/170</span>
                     </div>
+
+                    <ul style="margin-top:15px; margin-left:20px; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>Nat. Physics Olympiad Bronze Medalist (2016)</li>
+                        <li>Top 0.3% Iranian Univ. Entrance Exam (2018)</li>
+                    </ul>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title"><span>03.</span> Technical Skills</h2>
-            
-            <div class="skills-wrapper">
-                
-                <div class="skill-category">
-                    <h4>Core Competencies</h4>
-                    <div class="tags">
-                        <span>Computer Vision</span>
-                        <span>Deep Learning</span>
-                        <span>Machine Learning</span>
-                        <span>3D Reconstruction</span>
-                        <span>Object Detection/Tracking</span>
-                        <span>Model Optimization</span>
+            <!-- Skills Column -->
+            <div class="col" id="skills">
+                <h2 class="section-title"><span>03.</span> Technical Skills</h2>
+                <div class="skills-wrapper">
+                    
+                    <div class="skill-category">
+                        <h4>Core</h4>
+                        <div class="tags">
+                            <span>Computer Vision</span><span>Deep Learning</span><span>Machine Learning</span><span>3D Reconstruction</span><span>Object Detection/Tracking</span><span>Model Optimization</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h4>Languages</h4>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>MATLAB</span>
-                        <span>C++</span>
-                        <span>C</span>
-                        <span>C#</span>
-                        <span>Java</span>
-                        <span>JavaScript</span>
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <div class="tags">
+                            <span>Python</span><span>C++</span><span>MATLAB</span><span>C</span><span>C#</span><span>Java</span><span>JavaScript</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h4>Libraries</h4>
-                    <div class="tags">
-                        <span>PyTorch</span>
-                        <span>OpenCV</span>
-                        <span>Open3D</span>
-                        <span>LangChain</span>
-                        <span>Numpy</span>
-                        <span>Pandas</span>
-                        <span>Matplotlib</span>
-                        <span>Scikit-Learn</span>
-                        <span>TensorRT</span>
-                        <span>TensorFlow</span>
+                    <div class="skill-category">
+                        <h4>Libraries</h4>
+                        <div class="tags">
+                            <span>PyTorch</span><span>OpenCV</span><span>Open3D</span><span>LangChain</span><span>NumPy</span><span>Pandas</span><span>Scikit-Learn</span><span>TensorRT</span><span>TensorFlow</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h4>DevOps & Deployment</h4>
-                    <div class="tags">
-                        <span>Docker</span>
-                        <span>CUDA</span>
-                        <span>Git</span>
-                        <span>FastAPI</span>
+                    <div class="skill-category">
+                        <h4>Embedded & Engines</h4>
+                        <div class="tags">
+                            <span>HoloLens 2</span><span>Arduino</span><span>Raspberry Pi</span><span>NDI Polaris Tracker</span><span>Unity3D</span><span>Solidworks</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h4>Engines & Databases</h4>
-                    <div class="tags">
-                        <span>Unity3D</span>
-                        <span>Solidworks</span>
-                        <span>PostgreSQL</span>
+                    <div class="skill-category">
+                        <h4>DevOps & Deployment</h4>
+                        <div class="tags">
+                            <span>Docker</span><span>CUDA</span><span>Git</span><span>FastAPI</span><span>PostgreSQL</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h4>Embedded Systems</h4>
-                    <div class="tags">
-                        <span>HoloLens 2</span>
-                        <span>Arduino</span>
-                        <span>Raspberry Pi</span>
-                        <span>NDI Polaris Tracker</span>
-                    </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
