@@ -20,13 +20,25 @@
         </header>
 
         <section>
-            <p>A novel solution enabling surgeons to use HoloLens 2 to view various modalities augmented on real anatomy as holograms. Investigated Deep Learning approaches (RPM-Net, GeoTransformer) for point cloud registration.</p>
+            <p>A novel solution enabling surgeons to use HoloLens 2 to view various modalities augmented on real anatomy as holograms. The project investigated Deep Learning approaches (RPM-Net, GeoTransformer) to solve the critical challenge of point cloud registration.</p>
             
+            <!-- 1. General AR Demo (Horizontal) -->
             <div class="media-container">
                 <video controls>
                     <source src="assets/ar-demo.mp4" type="video/mp4">
+                    Your browser does not support video.
                 </video>
-                <div class="media-caption">Live demonstration of Point Cloud Registration</div>
+                <div class="media-caption">Live demonstration: HoloLens 2 Navigation View</div>
+            </div>
+
+            <!-- 2. Registration Demo (Vertical) -->
+            <div class="media-container">
+                <!-- Added 'vertical-video' class to handle the aspect ratio -->
+                <video controls class="vertical-video">
+                    <source src="assets/registration.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+                <div class="media-caption">Automatic Point Cloud Registration Process</div>
             </div>
 
             <h3>Key Contributions</h3>
