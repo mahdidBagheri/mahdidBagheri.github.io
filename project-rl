@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinforcement Learning | Mahdi Bagheri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+        
+        <header class="project-detail-header">
+            <h1>Deep Reinforcement Learning Experiments</h1>
+            <div class="tech-stack" style="font-size: 1rem;">
+                <span>Python</span> <span>PyTorch</span> <span>OpenAI Gym / Gymnasium</span>
+            </div>
+        </header>
+
+        <section>
+            <p>An exploration of Deep Reinforcement Learning algorithms applied to classic control environments. The primary focus is on value-based methods like Deep Q-Networks (DQN) and their optimizations.</p>
+            
+            <!-- 1. Lunar Lander Demo -->
+            <div class="media-container">
+                <video controls>
+                    <!-- Make sure to upload lunar-lander.mp4 -->
+                    <source src="assets/lunar-lander.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+                <div class="media-caption">Agent solving the Lunar Lander v2 environment using DQN</div>
+            </div>
+
+            <h3>Implementation Details</h3>
+            <ul style="color:var(--text-secondary); margin-left:20px;">
+                <li>Implemented <strong>Deep Q-Network (DQN)</strong> with Experience Replay to stabilize training.</li>
+                <li>Utilized Target Networks to prevent Q-value oscillation.</li>
+                <li>Optimized hyperparameters (epsilon-decay, learning rate, batch size) for faster convergence.</li>
+                <li>Achieved a consistent landing score of >200 over 100 consecutive episodes.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
